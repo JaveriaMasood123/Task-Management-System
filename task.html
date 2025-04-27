@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Board</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+<h1>Task Management System</h1>
+
+<div class="board">
+  <div id="todo" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>To Do</h2>
+    <div class="card-container"></div>
+    <button onclick="addCard('todo')">Add Task</button>
+  </div>
+
+  <div id="inprogress" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>In Progress</h2>
+    <div class="card-container"></div>
+    <!-- <button onclick="addCard('inprogress')">Add Task</button> -->
+   </div>
+
+  <div id="done" class="column" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>Done</h2>
+    <div class="card-container"></div>
+    <!-- <button onclick="addCard('done')">Add Task</button> -->
+   </div>
+</div>
+
+
+<script type="module" src="app2.js"></script>
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+  
